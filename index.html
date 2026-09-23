@@ -8,6 +8,9 @@
 <meta property="og:title" content="Yoshi｜キャリア面談 & 講演" />
 <meta property="og:description" content="現役ITエンジニア × 国家資格キャリアコンサルタント。未経験からのIT転職・キャリア面談・講演のご相談を承ります。" />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://younoki01.github.io/career-lp/" />
+<meta property="og:image" content="https://younoki01.github.io/career-lp/ogp.png" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#0f2444" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,8 +83,9 @@ header.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--b
 @media(max-width:760px){.nav-links{display:none}}
 
 /* hero */
-.hero{position:relative;background:linear-gradient(160deg,#0c1f3c 0%,var(--navy) 45%,var(--navy-2) 120%);color:#fff;
-  padding:104px 0 108px;overflow:hidden}
+.hero{position:relative;color:#fff;padding:104px 0 108px;overflow:hidden;
+  background:linear-gradient(155deg,rgba(9,24,48,.94) 0%,rgba(15,36,68,.9) 45%,rgba(27,58,103,.84) 120%),url('hero.jpg') center/cover no-repeat;
+  background-color:#0c1f3c}
 .hero::before{content:"";position:absolute;inset:0;opacity:.5;
   background:radial-gradient(700px 320px at 88% 0%,rgba(176,138,78,.22),transparent 70%)}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,138,78,.6),transparent)}
@@ -136,8 +140,8 @@ section.blk{padding:88px 0}
 .prof{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start}
 @media(max-width:780px){.prof{grid-template-columns:1fr;gap:32px}}
 .prof-card{background:linear-gradient(165deg,#0c1f3c,var(--navy));color:#fff;border-radius:8px;padding:34px 30px}
-.prof-card .av{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(216,193,154,.4);
-  display:flex;align-items:center;justify-content:center;font-family:"Noto Serif JP";font-size:1.7rem;font-weight:700;color:#e8cfa0;margin-bottom:18px}
+.prof-card .av{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:56% 20%;
+  border:2px solid rgba(216,193,154,.55);margin-bottom:18px;display:block;background:#fff}
 .prof-card h3{font-size:1.3rem;color:#fff}
 .prof-card .role{color:#d8c19a;font-size:.86rem;font-weight:500;margin-top:6px;line-height:1.7}
 .chips{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
@@ -270,7 +274,7 @@ footer .fine{font-size:.78rem;color:var(--faint);line-height:1.9}
     <p class="sec-sub" style="margin-bottom:34px">大学中退という回り道から、日系・外資ITの現場を歩いてきました。だからこそ、経歴に自信が持てない方にも等身大で向き合えます。</p>
     <div class="prof">
       <div class="prof-card">
-        <div class="av">Y</div>
+        <img class="av" src="profile.jpg" alt="Yoshi プロフィール写真" />
         <h3>Yoshi（ヨシ）</h3>
         <div class="role">現役ITエンジニア<br>× 国家資格キャリアコンサルタント</div>
         <div class="chips">
