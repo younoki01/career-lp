@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yoshi｜キャリア面談 & 講演 — 現役エンジニア × 国家資格キャリアコンサルタント</title>
+<meta name="description" content="現役ITエンジニア × 国家資格キャリアコンサルタントによるキャリア面談・IT転職相談・講演/セミナー。未経験からのIT転職、地方(福岡)で描くITキャリアを、現場のリアルと専門知識で伴走します。" />
+<meta property="og:title" content="Yoshi｜キャリア面談 & 講演" />
+<meta property="og:description" content="現役ITエンジニア × 国家資格キャリアコンサルタント。未経験からのIT転職・キャリア面談・講演のご相談を承ります。" />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#12305f" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --navy:#12305f;
+  --navy-2:#1c4a8f;
+  --sky:#3d8bfd;
+  --sky-soft:#eaf2ff;
+  --accent:#ff7a4d;
+  --ink:#1a2233;
+  --muted:#5b6678;
+  --bg:#ffffff;
+  --card:#ffffff;
+  --line:#e6ebf2;
+  --soft:#f5f8fc;
+  --shadow:0 10px 30px rgba(18,48,95,.08);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --navy:#9fc3ff; --navy-2:#bcd4ff; --sky:#6aa6ff; --sky-soft:#16233c;
+    --accent:#ff8a60; --ink:#e9eef6; --muted:#a2adc0; --bg:#0d1526;
+    --card:#131e33; --line:#243350; --soft:#101a2e; --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans JP",system-ui,sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.8;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3,.disp{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;line-height:1.35}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+.btn{
+  display:inline-flex;align-items:center;gap:.5em;justify-content:center;
+  padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;
+  transition:transform .15s ease,box-shadow .15s ease;font-size:1rem;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(255,122,77,.35)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+.btn-navy{background:var(--navy);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn-navy{color:#0d1526}}
+
+/* Header */
+header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
+  background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:"Zen Kaku Gothic New";font-weight:900;font-size:1.05rem;color:var(--navy)}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:22px;font-size:.92rem;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--navy)}
+@media(max-width:720px){.nav-links{display:none}}
+
+/* Hero */
+.hero{position:relative;color:#fff;padding:84px 0 96px;
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 55%,var(--sky) 130%);overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(1200px 400px at 80% -10%,rgba(255,255,255,.18),transparent 60%);pointer-events:none}
+.hero .wrap{position:relative;z-index:2}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);
+  padding:6px 14px;border-radius:999px;font-size:.82rem;font-weight:500;margin-bottom:22px}
+.hero h1{font-size:clamp(1.9rem,5vw,3.1rem);font-weight:900;letter-spacing:.01em}
+.hero h1 .hl{color:#ffd6c6}
+.hero p.lead{margin-top:20px;font-size:clamp(1rem,2.4vw,1.18rem);max-width:620px;color:rgba(255,255,255,.92)}
+.hero .cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.hero .mini{margin-top:26px;display:flex;gap:20px;flex-wrap:wrap;font-size:.86rem;color:rgba(255,255,255,.85)}
+.hero .mini b{color:#fff;font-size:1.15rem;font-family:"Zen Kaku Gothic New"}
+
+/* Sections */
+section.blk{padding:76px 0}
+.eyebrow{color:var(--sky);font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.sec-title{font-size:clamp(1.5rem,3.6vw,2.1rem);font-weight:900;color:var(--navy);margin:8px 0 8px}
+.sec-sub{color:var(--muted);margin-bottom:34px;max-width:640px}
+.soft{background:var(--soft)}
+
+/* Pain cards */
+.pains{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.pain{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;box-shadow:var(--shadow)}
+.pain .ic{font-size:1.5rem}
+.pain p{margin-top:8px;font-weight:500}
+
+/* Service cards */
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 24px;box-shadow:var(--shadow);position:relative}
+.svc.feat{border:1.5px solid var(--accent)}
+.svc .tag{position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:700;padding:4px 12px;border-radius:999px}
+.svc h3{font-size:1.2rem;color:var(--navy);margin-bottom:6px}
+.svc .price{font-weight:900;font-family:"Zen Kaku Gothic New";color:var(--ink);font-size:1.35rem;margin:10px 0}
+.svc .price small{font-size:.8rem;color:var(--muted);font-weight:500}
+.svc ul{list-style:none;margin-top:10px;font-size:.92rem;color:var(--muted)}
+.svc ul li{padding-left:20px;position:relative;margin:6px 0}
+.svc ul li::before{content:"✓";position:absolute;left:0;color:var(--sky);font-weight:900}
+
+/* Talk themes */
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.theme{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px;box-shadow:var(--shadow)}
+.theme .num{font-family:"Zen Kaku Gothic New";font-weight:900;color:var(--sky);font-size:1.1rem}
+.theme h3{font-size:1.08rem;color:var(--navy);margin:6px 0 10px}
+.theme .meta{font-size:.84rem;color:var(--muted)}
+.theme .meta b{color:var(--ink)}
+
+/* Profile */
+.prof{display:grid;grid-template-columns:1fr 1.4fr;gap:36px;align-items:start}
+@media(max-width:760px){.prof{grid-template-columns:1fr}}
+.prof-card{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;border-radius:20px;padding:30px;box-shadow:var(--shadow)}
+.prof-card .av{width:78px;height:78px;border-radius:50%;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:900;font-family:"Zen Kaku Gothic New";margin-bottom:14px}
+.prof-card h3{font-size:1.3rem}
+.prof-card .role{color:#ffd6c6;font-size:.9rem;font-weight:500;margin-top:4px}
+.chips{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:5px 11px;border-radius:999px;font-size:.78rem}
+.timeline{list-style:none}
+.timeline li{position:relative;padding:0 0 20px 26px;border-left:2px solid var(--line)}
+.timeline li:last-child{border-left-color:transparent}
+.timeline li::before{content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--sky)}
+.timeline .yr{font-weight:700;color:var(--navy);font-size:.9rem}
+.timeline .desc{font-size:.92rem;color:var(--muted)}
+.value{margin-top:8px;display:grid;gap:10px}
+.value .v{display:flex;gap:10px;align-items:flex-start;font-size:.94rem}
+.value .v .d{color:var(--accent);font-weight:900}
+
+/* Proof */
+.proof{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;text-align:center}
+.proof .p{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 30px;box-shadow:var(--shadow);min-width:150px}
+.proof .p .n{font-family:"Zen Kaku Gothic New";font-weight:900;font-size:2rem;color:var(--navy)}
+.proof .p .l{font-size:.82rem;color:var(--muted)}
+
+/* CTA band */
+.cta-band{background:linear-gradient(135deg,var(--navy),var(--sky));color:#fff;border-radius:24px;padding:48px 30px;text-align:center;box-shadow:var(--shadow)}
+.cta-band h2{font-size:clamp(1.4rem,3.4vw,2rem);font-weight:900}
+.cta-band p{margin:12px auto 26px;max-width:520px;color:rgba(255,255,255,.9)}
+.cta-band .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+footer{padding:40px 0 60px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);margin-top:20px}
+footer a{color:var(--navy);font-weight:600;text-decoration:none;margin:0 8px}
+.note{font-size:.78rem;color:var(--muted);margin-top:10px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <div class="logo">Yoshi<span>.</span>Career</div>
+    <nav class="nav-links">
+      <a href="#service">面談</a>
+      <a href="#talk">講演</a>
+      <a href="#profile">プロフィール</a>
+      <a href="#contact">相談する</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">現役ITエンジニア × 国家資格キャリアコンサルタント</span>
+    <h1>あなたのキャリアに、<br><span class="hl">現場のリアル</span>で伴走する。</h1>
+    <p class="lead">未経験からのIT転職、地方（福岡）で描くITキャリア。いまも第一線で働くエンジニアが、国家資格の専門知識とともに、あなたの一歩を一緒に考えます。</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#contact">キャリア面談を相談する</a>
+      <a class="btn btn-ghost" href="#talk">講演・セミナーの依頼</a>
+    </div>
+    <div class="mini">
+      <div><b>★5.0</b>　相談サービス評価</div>
+      <div><b>31本</b>　キャリア記事を発信</div>
+      <div><b>福岡</b>　全国オンライン対応</div>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="wrap">
+    <div class="eyebrow">Who is this for</div>
+    <h2 class="sec-title">こんな悩み、ありませんか？</h2>
+    <p class="sec-sub">ひとつでも当てはまるなら、話すことで整理できます。</p>
+    <div class="pains">
+      <div class="pain"><div class="ic">💻</div><p>未経験からIT業界へ。何から始めればいい？</p></div>
+      <div class="pain"><div class="ic">📄</div><p>書類選考で止まってしまう。通る書き方が知りたい</p></div>
+      <div class="pain"><div class="ic">🏠</div><p>地方在住だから、IT転職は難しいと思っている</p></div>
+      <div class="pain"><div class="ic">🧭</div><p>今後のキャリアに漠然とした不安がある</p></div>
+      <div class="pain"><div class="ic">🌏</div><p>日系から外資ITへ。選考も働き方も分からない</p></div>
+      <div class="pain"><div class="ic">🤖</div><p>AI時代に、どんなスキルを身につけるべき？</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk soft" id="service">
+  <div class="wrap">
+    <div class="eyebrow">Service</div>
+    <h2 class="sec-title">キャリア面談を主軸に伴走します</h2>
+    <p class="sec-sub">まずは気軽な壁打ちから、じっくりの継続伴走まで。オンライン中心・全国対応（福岡は対面も相談可）。</p>
+    <div class="svcs">
+      <div class="svc">
+        <h3>キャリア壁打ち 30分</h3>
+        <div class="price">500〜1,000円 <small>/ 回</small></div>
+        <ul><li>まず話してみたい方の入口</li><li>悩みの整理・方向性の確認</li></ul>
+      </div>
+      <div class="svc feat">
+        <span class="tag">主力メニュー</span>
+        <h3>キャリア面談 60分</h3>
+        <div class="price">5,000〜8,000円 <small>/ 回</small></div>
+        <ul><li>キャリアの棚卸しと設計</li><li>IT転職・業界選びの相談</li><li>現役エンジニア視点の具体策</li></ul>
+      </div>
+      <div class="svc">
+        <h3>継続伴走パッケージ</h3>
+        <div class="price">応相談 <small>/ 全3〜5回・月額</small></div>
+        <ul><li>転職完了まで継続サポート</li><li>書類添削・面接対策を含む</li></ul>
+      </div>
+      <div class="svc">
+        <h3>外資ITステップアップ相談</h3>
+        <div class="price">7,000円〜 <small>/ 回</small></div>
+        <ul><li>日系→外資ITの選考・働き方</li><li>オファー(ベース・RSU)の読み方</li></ul>
+      </div>
+    </div>
+    <p class="note">※ ご相談・お申し込みはココナラ／noteから承ります。求人紹介・企業推薦は行っておりません（相談・キャリア支援に特化）。</p>
+  </div>
+</section>
+
+<section class="blk" id="talk">
+  <div class="wrap">
+    <div class="eyebrow">Lecture & Seminar</div>
+    <h2 class="sec-title">講演・セミナー・研修</h2>
+    <p class="sec-sub">専門学校・大学、自治体・就労支援機関、IT企業などへ。現役エンジニア × 国家資格キャリアコンサルタントの視点で、現場のリアルを届けます。オンライン全国対応／30〜90分・ワークショップ形式も可／講演料は応相談。</p>
+    <div class="themes">
+      <div class="theme"><div class="num">01</div><h3>未経験からのIT転職 リアルガイド</h3><div class="meta"><b>対象:</b> 求職者・専門学校生・第二新卒<br>IT職種の地図／現実的な入り方／書類・面接の勘所</div></div>
+      <div class="theme"><div class="num">02</div><h3>地方（福岡）で描くITキャリア</h3><div class="meta"><b>対象:</b> 地方在住者・UIターン希望・自治体<br>フルリモート時代の地方×IT／在住のまま働く実例</div></div>
+      <div class="theme"><div class="num">03</div><h3>AI時代のキャリア形成と学び直し</h3><div class="meta"><b>対象:</b> 社会人全般・企業研修・学生<br>変わる採用と働き方／残る価値／学び直しの進め方</div></div>
+      <div class="theme"><div class="num">04</div><h3>働く人のメンタルとキャリア継続</h3><div class="meta"><b>対象:</b> 若手社会人・企業人事<br>不調との付き合い方／短期離職の影響／長く働く設計</div></div>
+      <div class="theme"><div class="num">05</div><h3>現役エンジニアが語るIT業界のリアルな歩き方</h3><div class="meta"><b>対象:</b> 学生・未経験者<br>現場のリアル／職種別キャリアパス／伸びる働き方</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk soft" id="profile">
+  <div class="wrap">
+    <div class="eyebrow">Profile</div>
+    <h2 class="sec-title">プロフィール</h2>
+    <div class="prof">
+      <div class="prof-card">
+        <div class="av">Y</div>
+        <h3>Yoshi（ヨシ）</h3>
+        <div class="role">現役ITエンジニア × 国家資格キャリアコンサルタント</div>
+        <div class="chips">
+          <span class="chip">国家資格キャリアコンサルタント</span>
+          <span class="chip">現役エンジニア</span>
+          <span class="chip">外資IT</span>
+          <span class="chip">福岡</span>
+        </div>
+        <div class="value">
+          <div class="v"><span class="d">◆</span><span>評論家ではなく、いまも働く<b>現役エンジニア</b>が語る現場のリアル</span></div>
+          <div class="v"><span class="d">◆</span><span>国家資格に基づく<b>専門的なキャリア支援</b></span></div>
+          <div class="v"><span class="d">◆</span><span>大学中退から始まった<b>当事者の実体験</b></span></div>
+          <div class="v"><span class="d">◆</span><span>地方発だからこそ語れる<b>福岡 × IT</b>の視点</span></div>
+        </div>
+      </div>
+      <div>
+        <ul class="timeline">
+          <li><div class="yr">2013–2016　国内メーカー系IT企業</div><div class="desc">システムエンジニアとしてアプリケーション開発を担当。社会人のスタート。</div></li>
+          <li><div class="yr">2016–2019　外資系IT企業</div><div class="desc">製品コンサルタント。データベース・インフラの導入支援。日系から外資への初めての転職。</div></li>
+          <li><div class="yr">2019–現在　外資系IT企業</div><div class="desc">サポートエンジニアとしてOSの技術解析を担当。現職。</div></li>
+          <li><div class="yr">2023　国家資格キャリアコンサルタント 取得</div><div class="desc">現役エンジニアの視点で、未経験者のIT転職・キャリア形成を支援。</div></li>
+        </ul>
+        <div class="proof">
+          <div class="p"><div class="n">★5.0</div><div class="l">相談サービス評価</div></div>
+          <div class="p"><div class="n">31<span style="font-size:1rem">本</span></div><div class="l">発信したキャリア記事</div></div>
+          <div class="p"><div class="n">2023</div><div class="l">国家資格 取得</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>まずは、話してみませんか？</h2>
+      <p>キャリア面談のご相談も、講演・セミナーのご依頼も、下記から承っています。あなたの状況に合わせて、最適な進め方をご提案します。</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://coconala.com/users/125058" target="_blank" rel="noopener">ココナラで相談する</a>
+        <a class="btn btn-navy" href="https://note.com/shushoku" target="_blank" rel="noopener">noteで記事を読む</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="https://coconala.com/users/125058" target="_blank" rel="noopener">ココナラ</a>
+      <a href="https://note.com/shushoku" target="_blank" rel="noopener">note</a>
+    </div>
+    <p class="note">© 2026 Yoshi｜キャリア面談 &amp; 講演　—　現役ITエンジニア × 国家資格キャリアコンサルタント（福岡）<br>掲載の実績・肩書きは2026年9月時点のものです。求人紹介・企業推薦は行っておりません。</p>
+  </div>
+</footer>
+
+</body>
+</html>
